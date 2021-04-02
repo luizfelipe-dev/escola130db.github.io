@@ -127,7 +127,7 @@ header {
 
 /* -----------------------------------------------PÁGINA 3 - APRENDER------------------------------------------------------- */
 
-#aprender-section {
+#aprender {
     min-height: 85vh;
     color: black;
     /* background-color:#0E1116; */
@@ -260,7 +260,7 @@ header {
 
 /* ----------------------------------------PÁGINA 6 - VANTAGENS -------------------------------------------------------------- */
 
-#vantagens-section h1 {
+#vantagens h1 {
     color: whitesmoke;
     text-align: center;
     font-size: 15vh;
@@ -335,7 +335,7 @@ header {
 
 /* --------------------------------------PÁGINA 8 DÚVIDAS TEXTOS ---------------------------------------------------------- */
 
-#faq-section {
+#faq {
     background-color: whitesmoke;
     color: black;
     min-height: 85vh;
@@ -475,7 +475,7 @@ footer p {
         opacity: 1;
     }
     /* ----------------------------------------------- */
-    #aprender-section {
+    #aprender {
         min-height: 100vh;
     }
     .aprender-superior {
@@ -538,10 +538,10 @@ footer p {
         margin-bottom: 40px;
     }
     /* ----------------------------------------------- */
-    #vantagens-section {
+    #vantagens {
         min-height: 100vh;
     }
-    #vantagens-section h1 {
+    #vantagens h1 {
         font-size: 8vh;
         margin-top: 30px;
     }
@@ -571,7 +571,7 @@ footer p {
         text-align: center;
         font-size: 10vh;
     }
-    #faq-section {
+    #faq {
         display: flex;
         flex-direction: column;
     }
