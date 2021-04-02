@@ -80,14 +80,22 @@ header {
 }
 
 .hero h1 {
-    color: #F7F3E3;
+    color: whitesmoke;
     font-size: 6vh;
     margin: 0 15px;
     align-self: start;
 }
 
 .hero h2 {
-    background-color: #F7F3E3;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 5vh;
+    padding: 3px 15px;
+    align-self: flex-start;
+}
+
+.hero h2:hover {
+    background-color: sandybrown;
     color: black;
     font-size: 5vh;
     padding: 3px 15px;
@@ -95,7 +103,7 @@ header {
 }
 
 .hero h3 {
-    color: #F7F3E3;
+    color: whitesmoke;
     font-size: 12px;
     padding: 5px 15px;
     align-self: flex-start;
