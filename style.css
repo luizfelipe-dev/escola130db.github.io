@@ -127,7 +127,7 @@ header {
 
 /* -----------------------------------------------PÁGINA 3 - APRENDER------------------------------------------------------- */
 
-#aprender {
+#aprender-section {
     min-height: 85vh;
     color: black;
     /* background-color:#0E1116; */
@@ -475,7 +475,7 @@ footer p {
         opacity: 1;
     }
     /* ----------------------------------------------- */
-    #aprender {
+    #aprender-section {
         min-height: 100vh;
     }
     .aprender-superior {
