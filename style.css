@@ -1,0 +1,613 @@
+/* -------------------------------------------------SESSÃO GERAL----------------------------------------------------- */
+
+* {
+    padding: 0%;
+    margin: 0%;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0E1116;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.8;
+    padding: 1px 10px;
+    color: black;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+a:visited,
+a:active {
+    color: inherit;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+
+/* ----------------------------------------------CABEÇALHO/MENU PRINCIPAL----------------------------------------------------- */
+
+header {
+    background-color: white;
+    color: black;
+    width: 100%;
+    position: fixed;
+    padding: 0px 50px;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    opacity: 1;
+}
+
+.div-header {
+    display: flex;
+    align-items: center;
+}
+
+.div-header p {
+    margin-left: 50px;
+    font-size: medium;
+    color: slategray;
+}
+
+
+/* ----------------------------------------------------PÁGINA PRINCIPAL-------------------------------------------------- */
+
+.imagem-logo {
+    width: 70px;
+    ;
+}
+
+.hero {
+    background-image: url(images/instr2.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-clip: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero h1 {
+    color: #F7F3E3;
+    font-size: 6vh;
+    margin: 0 15px;
+    align-self: start;
+}
+
+.hero h2 {
+    background-color: #F7F3E3;
+    color: black;
+    font-size: 5vh;
+    padding: 3px 15px;
+    align-self: flex-start;
+}
+
+.hero h3 {
+    color: #F7F3E3;
+    font-size: 12px;
+    padding: 5px 15px;
+    align-self: flex-start;
+}
+
+
+/* -------------------------------------------PÁGINA 2 - APRENDER IMAGEM --------------------------------------------------- */
+
+#traktor {
+    min-height: 85vh;
+    display: flex;
+    background-image: url(images/pro3-cel3.png);
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#traktor h1 {
+    font-size: 20vh;
+    color: white;
+}
+
+#traktor h3 {
+    font-size: 20px;
+    color: white;
+}
+
+
+/* -----------------------------------------------PÁGINA 3 - APRENDER------------------------------------------------------- */
+
+#aprender {
+    min-height: 85vh;
+    color: black;
+    /* background-color:#0E1116; */
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.aprender-superior {
+    margin-top: 30px;
+}
+
+.aprender-main {
+    display: flex;
+    align-items: center;
+    /* border: solid 2px white; */
+    height: 500px;
+}
+
+.aprender-left {
+    width: 50%;
+}
+
+.aprender-left img {
+    width: 90%;
+}
+
+.aprender-left img:hover {
+    width: 100%;
+}
+
+.aprender-left div p {
+    font-size: 12px;
+}
+
+.aprender-right {
+    width: 50%;
+}
+
+.aprender-right ul li {
+    margin: 0px 30px;
+    list-style: none;
+    font-size: large;
+}
+
+.aprender-right ul li:hover {
+    background-color: sandybrown;
+    border-radius: 5px;
+    margin: 30px;
+    list-style: none;
+    font-size: x-large;
+}
+
+
+/* ------------------------------------------PÁGINA 4 - INSTRUTOR IMAGEM ------------------------------------------------------------ */
+
+#instrutor-big {
+    min-height: 85vh;
+    background-image: url(images/instrutor.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#instrutor-big h1 {
+    color: white;
+    font-size: 20vh;
+}
+
+
+/* ------------------------------------------PÁGINA 5 - INSTRUTOR  ------------------------------------------------------------ */
+
+#instrutor {
+    min-height: 85vh;
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#instrutor p {
+    line-height: 40px;
+    font-size: large;
+}
+
+#instrutor p:hover {
+    line-height: 40px;
+    font-size: x-large;
+    background-color: sandybrown;
+    border-radius: 5px;
+}
+
+.instrutor-icons {
+    font-size: 38px;
+    margin: 15px;
+}
+
+.instrutor-icons:hover {
+    font-size: 42px;
+}
+
+#instrutor h1 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.div-imagem-instrutor {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.imagem-instrutor {
+    margin: 0 10px;
+    max-width: 15%;
+    background-clip: padding-box;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.imagem-instrutor:hover {
+    border-radius: 5px;
+}
+
+
+/* ----------------------------------------PÁGINA 6 - VANTAGENS -------------------------------------------------------------- */
+
+#vantagens-section h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 15vh;
+    margin-top: 100px;
+}
+
+#vantagens-main {
+    min-height: 85vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vantagens-main p {
+    font-size: 16px;
+    line-height: 40px;
+}
+
+#vantagens-main p:hover {
+    background-color: sandybrown;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#vantagens-left {
+    width: 50%;
+}
+
+#vantagens-right {
+    width: 25%;
+}
+
+#vantagens-mid {
+    width: 25%;
+}
+
+#vantagens-left img {
+    width: 100%;
+}
+
+
+/* .button {
+    width: 30%;
+    background-color: green;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+    align-self: center;
+} */
+
+
+/* ----------------------------------------PÁGINA 7 - DUVIDAS - IMAGEM ----------------------------------------------------- */
+
+#faq-big {
+    min-height: 85vh;
+    background-image: url(images/faq.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+}
+
+#faq-big h1 {
+    font-size: 18vh;
+}
+
+
+/* --------------------------------------PÁGINA 8 DÚVIDAS TEXTOS ---------------------------------------------------------- */
+
+#faq-section {
+    background-color: whitesmoke;
+    color: black;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+}
+
+.faq-center {
+    color: black;
+    font-size: 16spx;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+
+.faq-center p:hover {
+    background-color: sandybrown;
+    border-radius: 5px;
+}
+
+.faq-center div {
+    width: 33%;
+    margin: 20px 40px;
+}
+
+
+/* --------------------------------------PÁGINA 9 NEWSLETTER  ---------------------------------------------------------- */
+
+#newsletter {
+    background-color: #0E1116;
+    color: white;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#newsletter form {
+    margin: 30px 30px;
+}
+
+#newsletter h1 {
+    margin: 50px;
+    font-size: 24px;
+}
+
+#newsletter h3 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#newsletter a {
+    opacity: 0.5;
+}
+
+#newsletter a:hover {
+    opacity: 1;
+}
+
+#botao-news {
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: white;
+    background-color: #F7F3E3;
+}
+
+.inputs {
+    margin: 10px 20px;
+}
+
+.msg-botao {
+    margin-bottom: 20px;
+    width: auto;
+    height: 20px;
+    color: black;
+}
+
+
+/* -------------------------------------------------RODAPÉ----------------------------------------------------- */
+
+footer {
+    background-color: #0E1116;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    padding-top: 20px;
+    min-height: 30vh;
+}
+
+footer a {
+    background-color: #0E1116;
+    color: white;
+}
+
+footer p {
+    padding: 20px;
+}
+
+
+/* ----------------------------------------- --------------------------------------- --------------------------------------*/
+
+
+/* ----------------------------------------- ADAPTAÇÃO DE RESOLUÇÃO PARA SMARTPHONES --------------------------------------*/
+
+
+/* ----------------------------------------- --------------------------------------- --------------------------------------*/
+
+@media screen and (max-width: 480px) {
+    header {
+        display: none;
+    }
+    .hero {
+        background-image: url(images/hero2-cel.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .hero h1,
+    .hero h2 {
+        align-self: center;
+        text-align: center;
+        font-size: xx-large;
+    }
+    .hero h3 {
+        font-size: small;
+        margin: 0px 90px;
+        text-align: center;
+    }
+    /* ----------------------------------------------- */
+    #traktor {
+        background-image: url(images/hero2-cel.jpg);
+        display: none;
+    }
+    #traktor h1,
+    h3 {
+        font-size: 10vh;
+        text-align: center;
+        opacity: 1;
+    }
+    /* ----------------------------------------------- */
+    #aprender {
+        min-height: 100vh;
+    }
+    .aprender-superior {
+        display: none;
+    }
+    .aprender-main,
+    .aprender-left,
+    .aprender-right {
+        width: 100%;
+    }
+    .aprender-left h1 {
+        text-transform: uppercase;
+        margin: 30px 20px;
+        font-size: 6vh;
+    }
+    .aprender-left img {
+        width: 70%;
+    }
+    .aprender-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #aprender ul li {
+        width: 100%;
+        margin: 8px;
+    }
+    /* ----------------------------------------------- */
+    #instrutor-big {
+        align-items: center;
+        min-height: 100vh;
+    }
+    #instrutor-big h1 {
+        margin-top: 30px;
+        font-size: 10vh;
+    }
+    /* ----------------------------------------------- */
+    #instrutor {
+        min-height: 100vh;
+    }
+    #instrutor p {
+        text-align: center;
+        line-height: 30px;
+        font-size: medium;
+        margin: 0px 40px;
+    }
+    #instrutor p:hover {
+        font-size: large;
+    }
+    .div-imagem-instrutor {
+        flex-direction: column;
+    }
+    .imagem-instrutor {
+        max-width: 50%;
+        border-radius: 40px;
+        margin: 5px;
+    }
+    .social {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    /* ----------------------------------------------- */
+    #vantagens-section {
+        min-height: 100vh;
+    }
+    #vantagens-section h1 {
+        font-size: 8vh;
+        margin-top: 30px;
+    }
+    #vantagens-main {
+        display: flex;
+        flex-direction: column;
+    }
+    #vantagens-left,
+    #vantagens-mid,
+    #vantagens-right {
+        width: 100%;
+    }
+    #vantagens-main img {
+        display: none;
+    }
+    #vantagens-main p {
+        margin: 0px 30px;
+    }
+    /* ----------------------------------------------- */
+    #faq-big {
+        background-position: center;
+        display: flex;
+        align-items: flex-start;
+        min-height: 100vh;
+    }
+    #faq-big h1 {
+        text-align: center;
+        font-size: 10vh;
+    }
+    #faq-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .faq-center {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .faq-center div {
+        width: 90%;
+        margin: 20px;
+    }
+    .title-faq {
+        font-size: x-large;
+    }
+    #faq div p {
+        font-size: small;
+        margin: 5px 20px;
+    }
+    /* ----------------------------------------------- */
+    #newsletter {
+        margin: 10px 50px;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .newsletter #botao-news {
+        margin: 30px 30px;
+    }
+    #newsletter h3 {
+        margin: 10px 30px;
+        font-size: 18px;
+    }
+    /* ----------------------------------------------- */
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 80px;
+    }
+}
