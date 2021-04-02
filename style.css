@@ -170,6 +170,7 @@ header {
     margin: 0px 30px;
     list-style: none;
     font-size: large;
+    line-height: 35px;
 }
 
 .aprender-right ul li:hover {
