@@ -606,6 +606,7 @@ footer p {
         height: 40px;
         justify-content: center;
         border-radius: 8px;
+        display: block;
     }
 
     /* ----------------------------------------------- */
