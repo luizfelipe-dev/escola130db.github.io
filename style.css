@@ -81,9 +81,9 @@ header {
 
 .hero h1 {
     color: whitesmoke;
-    font-size: 6vh;
+    font-size: 20vh;
     margin: 0 15px;
-    align-self: start;
+    align-self: center;
 }
 
 .hero h2 {
@@ -91,7 +91,7 @@ header {
     color: black;
     font-size: 5vh;
     padding: 3px 15px;
-    align-self: flex-start;
+    align-self: center
 }
 
 .hero h2:hover {
@@ -99,16 +99,15 @@ header {
     color: black;
     font-size: 5vh;
     padding: 3px 15px;
-    align-self: flex-start;
+    align-self: center;
 }
 
 .hero h3 {
     color: whitesmoke;
     font-size: 14px;
     line-height: 20px;
-    align-self: flex-start;
-    margin-left: 20px;
-    margin-top: 8px;
+    align-self: center;
+    margin-top: 10px;
 }
 
 
@@ -348,7 +347,7 @@ header {
 
 .faq-center {
     color: black;
-    font-size: 16spx;
+    font-size: 16px;
     display: flex;
     text-align: center;
     flex-direction: row;
@@ -645,4 +644,25 @@ footer p {
         display: none;
     }
 
+    #aprender ul li {
+        width: 100%;
+        margin: 8px;
+        font-size: small;
+        line-height: 10px;
+    }
+
+    #vantagens-main p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    #faq-big h1 {
+        text-align: center;
+        font-size: 8vh;
+    }
+
+    .faq-center div {
+        width: 33%;
+        margin: 10px 10px;
+    }
 }
