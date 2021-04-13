@@ -104,9 +104,11 @@ header {
 
 .hero h3 {
     color: whitesmoke;
-    font-size: 12px;
-    padding: 5px 15px;
+    font-size: 14px;
+    line-height: 20px;
     align-self: flex-start;
+    margin-left: 20px;
+    margin-top: 8px;
 }
 
 
@@ -311,16 +313,9 @@ header {
     width: 100%;
 }
 
-
-/* .button {
-    width: 30%;
-    background-color: green;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    padding: 15px;
-    border-radius: 8px;
-    align-self: center;
-} */
+.buttonBuy {
+    display: none;
+}
 
 
 /* ----------------------------------------PÁGINA 7 - DUVIDAS - IMAGEM ----------------------------------------------------- */
@@ -467,9 +462,10 @@ footer p {
         font-size: xx-large;
     }
     .hero h3 {
-        font-size: small;
-        margin: 0px 40px;
-        text-align: center;
+        font-size: medium;
+        margin: 4px;
+        margin-left: auto;
+        margin-right: auto;
     }
     /* ----------------------------------------------- */
     #traktor {
@@ -551,6 +547,7 @@ footer p {
     /* ----------------------------------------------- */
     #vantagens {
         min-height: 100vh;
+        text-align: center;
     }
     #vantagens h1 {
         font-size: 7vh;
@@ -602,6 +599,15 @@ footer p {
         font-size: small;
         margin: 5px 20px;
     }
+
+    .buttonBuy {
+        margin-top: 25px;
+        width: 200px;;
+        height: 40px;
+        justify-content: center;
+        border-radius: 8px;
+    }
+
     /* ----------------------------------------------- */
     #newsletter {
         margin: 10px 50px;
