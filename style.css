@@ -568,7 +568,7 @@ footer p {
         display: none;
     }
     #vantagens-main p {
-        margin: 0px 30px;
+        margin: 12px 30px;
     }
     /* ----------------------------------------------- */
 
@@ -604,14 +604,8 @@ footer p {
 
     .faq-center div p {
         width: 100%;
-        
-        
     }
     
-
-
-
-
     .buttonBuy {
         margin-top: 25px;
         width: 200px;;
