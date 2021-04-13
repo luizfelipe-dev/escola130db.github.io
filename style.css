@@ -571,37 +571,41 @@ footer p {
         margin: 0px 30px;
     }
     /* ----------------------------------------------- */
-    #faq-big {
-        background-position: center;
-        display: flex;
-        align-items: flex-start;
-        min-height: 100vh;
-    }
-    #faq-big h1 {
-        text-align: center;
-        font-size: 10vh;
-    }
+
     #faq {
+        background-color: whitesmoke;
+        color: black;
+        min-height: 85vh;
         display: flex;
-        flex-direction: column;
-    }
-    .faq-center {
-        display: flex;
-        flex-direction: column;
         align-items: center;
     }
+    
+    .faq-center {
+        color: black;
+        font-size: 16px;
+        display: flex;
+        text-align: center;
+        flex-direction: row;
+    }
+    
+    .faq-center p:hover {
+        background-color: sandybrown;
+        border-radius: 5px;
+    }
+    
     .faq-center div {
-        width: 100%;
-        margin: 10px;
+        width: 33%;
+        margin: 20px 40px;
     }
+    
 
-    .title-faq {
-        font-size: x-large;
-    }
-    #faq div p {
-        font-size: small;
-        margin: 5px 20px;
-    }
+
+
+
+
+
+
+
 
     .buttonBuy {
         margin-top: 25px;
