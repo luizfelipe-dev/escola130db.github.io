@@ -576,8 +576,8 @@ footer p {
         background-color: whitesmoke;
         color: black;
         min-height: 85vh;
-        display: flex;
-        align-items: center;
+        /* display: flex;
+        align-items: center; */
     }
     
     .faq-center {
@@ -585,7 +585,9 @@ footer p {
         font-size: 16px;
         display: flex;
         text-align: center;
-        flex-direction: row;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
     
     .faq-center p:hover {
@@ -594,15 +596,18 @@ footer p {
     }
     
     .faq-center div {
-        width: 33%;
-        margin: 20px 40px;
+        min-width: 80%;
+        max-width: 90%;
+        margin: 20px 10px;
+        
+    }
+
+    .faq-center div p {
+        width: 100%;
+        
+        
     }
     
-
-
-
-
-
 
 
 
