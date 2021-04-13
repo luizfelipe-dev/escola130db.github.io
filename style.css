@@ -454,7 +454,10 @@ footer p {
         background-size: cover;
         background-position: center;
     }
-    .hero h1,
+    .hero h1{
+        font-size: xx-large;
+    }
+
     .hero h2 {
         align-self: center;
         text-align: center;
