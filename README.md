@@ -1,4 +1,4 @@
-### Este site está online em: https://escola130db.netlify.app/
+### Site online em: https://escola130db.netlify.app/
 
 Este é meu primeiro Side-Project!
 
