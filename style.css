@@ -63,6 +63,7 @@ header {
     align-items: center;
     justify-content: space-between;
     opacity: 1;
+    z-index: auto;
 }
 
 .div-header {
@@ -81,12 +82,11 @@ header {
 
 .imagem-logo {
     width: 70px;
-    ;
 }
 
 .hero {
     background-image: url(images/instr2.png);
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
     background-clip: content-box;
     display: flex;
@@ -373,7 +373,8 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 100px;
+    
 }
 
 
@@ -407,15 +408,34 @@ header {
     color: whitesmoke;
     min-height: 85vh;
     display: flex;
-    align-items: center;
 }
 
 .faq-center {
+    /* margin-left: 100px; */
+    width: 100%;
+    /* background-color: aqua; */
     color: black;
-    font-size: 16px;
+    font-size: 20px;
     display: flex;
-    text-align: center;
-    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.faq-left {
+    width: 40%;
+    margin-left: 50px;
+    /* background-color: aqua; */
+}
+
+.faq-right {
+    width: 60%;
+    /* background-color: blueviolet; */
+}
+
+.faq-right img{
+    filter: sepia();
+    margin-left: 150px;
+    width: 700px;
+    /* background-color: blueviolet; */
 }
 
 .faq-center p:hover {
@@ -423,9 +443,9 @@ header {
     border-radius: 5px;
 }
 
-.faq-center div {
-    width: 33%;
-    margin: 20px 40px;
+.description {
+    background-color: sandybrown;
+    border-radius: 8px;
 }
 
 
@@ -667,10 +687,6 @@ footer p {
         max-width: 90%;
         margin: 20px 10px;
     }
-
-    .faq-center div p {
-        width: 100%;
-    }
     
     .buttonBuy {
         margin-top: 25px;
@@ -738,4 +754,12 @@ footer p {
         width: 33%;
         margin: 10px 10px;
     }
+
+    /* Collapse */
+
+    details, summary {
+          list-style: none;
+      }
+
+
 }
