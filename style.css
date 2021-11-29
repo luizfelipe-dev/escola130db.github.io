@@ -257,6 +257,7 @@ header {
 #instrutor p {
     line-height: 40px;
     font-size: large;
+    margin: 20px;
 }
 
 #instrutor h1 {
@@ -307,8 +308,8 @@ header {
 
 #vantagens-main {
     min-height: 100vh;
-    background-color: whitesmoke;
-    color: black;
+    background-color: #0E1116;
+    color: whitesmoke;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -359,7 +360,7 @@ header {
 
 #traktor-content {
     background-color: whitesmoke;
-    color: black;
+    color: #0E1116;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -384,26 +385,26 @@ header {
 /* ----------------------------------------PÁGINA 7 - DUVIDAS - IMAGEM ----------------------------------------------------- */
 
 #faq-big {
-    min-height: 85vh;
-    background-image: url(images/faq.png);
+    min-height: 100vh;
+    background-color: whitesmoke;
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
+    color: black;
 }
 
 #faq-big h1 {
-    font-size: 18vh;
+    font-size: 15vh;
 }
 
 
 /* --------------------------------------PÁGINA 8 DÚVIDAS TEXTOS ---------------------------------------------------------- */
 
 #faq {
-    background-color: whitesmoke;
-    color: black;
+    background-color: darkorchid;
+    color: whitesmoke;
     min-height: 85vh;
     display: flex;
     align-items: center;
