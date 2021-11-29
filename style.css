@@ -1,4 +1,6 @@
-/* -------------------------------------------------SESSÃO GERAL----------------------------------------------------- */
+html {
+    scroll-behavior: smooth;
+  }
 
 * {
     padding: 0%;
@@ -32,6 +34,20 @@ a:active {
 h1 {
     font-size: 30px;
 }
+
+.parallax {
+    /* The image used */
+    background-image: url("img_parallax.jpg");
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 
 /* ----------------------------------------------CABEÇALHO/MENU PRINCIPAL----------------------------------------------------- */
@@ -93,14 +109,14 @@ header {
     padding: 3px 15px;
     align-self: center
 }
-
+/* 
 .hero h2:hover {
     background-color: sandybrown;
     color: black;
     font-size: 5vh;
     padding: 3px 15px;
     align-self: center;
-}
+} */
 
 .hero h3 {
     color: whitesmoke;
@@ -133,6 +149,11 @@ header {
     color: white;
 }
 
+.texto-lateral {
+    text-align: left;
+    align-items: flex-start;
+}
+
 
 /* -----------------------------------------------PÁGINA 3 - APRENDER------------------------------------------------------- */
 
@@ -156,27 +177,41 @@ header {
 }
 
 .aprender-left {
+    margin-top: 300px;
     width: 50%;
 }
 
-.aprender-left img {
-    width: 90%;
+.aprender-left h1{
+    margin-top: 300px;
 }
 
-.aprender-left img:hover {
+.aprender-left img {
     width: 100%;
 }
+
+/* .aprender-left img:hover {
+    width: 100%;
+} */
 
 .aprender-left div p {
     font-size: 12px;
 }
 
 .aprender-right {
+    align-items: center;
     width: 50%;
 }
 
+.aprender-right h1 {
+    margin-top: 300px;
+}
+
 .aprender-right ul li {
-    margin: 0px 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 30px;
     list-style: none;
     font-size: large;
     line-height: 35px;
@@ -184,10 +219,7 @@ header {
 
 .aprender-right ul li:hover {
     background-color: sandybrown;
-    border-radius: 5px;
-    margin: 30px;
-    list-style: none;
-    font-size: x-large;
+    border-radius: 5px;   
 }
 
 
@@ -225,6 +257,10 @@ header {
 #instrutor p {
     line-height: 40px;
     font-size: large;
+}
+
+#instrutor h1 {
+    font-size: 200px;   
 }
 
 #instrutor p:hover {
@@ -269,16 +305,10 @@ header {
 
 /* ----------------------------------------PÁGINA 6 - VANTAGENS -------------------------------------------------------------- */
 
-#vantagens h1 {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 15vh;
-    margin-top: 100px;
-}
-
 #vantagens-main {
-    min-height: 85vh;
-    color: white;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    color: black;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -298,14 +328,17 @@ header {
 
 #vantagens-left {
     width: 50%;
+    margin-top: 150px;
 }
 
 #vantagens-right {
-    width: 25%;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
-#vantagens-mid {
-    width: 25%;
+#vantagens-right h1{
+    font-size: 50px;
 }
 
 #vantagens-left img {
@@ -315,6 +348,37 @@ header {
 .buttonBuy {
     display: none;
 }
+
+.vantagens-lista-dividida {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* ----------------------------------------PÁGINA 7 - TRAKTOR CONTENT - IMAGEM ----------------------------------------------------- */
+
+#traktor-content {
+    background-color: whitesmoke;
+    color: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#traktor-content div {
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+
+/* #traktor-content img {
+    width: 70%;
+} */
 
 
 /* ----------------------------------------PÁGINA 7 - DUVIDAS - IMAGEM ----------------------------------------------------- */
@@ -556,6 +620,8 @@ footer p {
         margin-top: 30px;
     }
     #vantagens-main {
+        background-color: whitesmoke;
+        color: black;
         display: flex;
         flex-direction: column;
     }
@@ -599,7 +665,6 @@ footer p {
         min-width: 80%;
         max-width: 90%;
         margin: 20px 10px;
-        
     }
 
     .faq-center div p {
