@@ -2,6 +2,16 @@ html {
     scroll-behavior: smooth;
   }
 
+  /* desabilitando selecao: */
+.not-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 * {
     padding: 0%;
     margin: 0%;
@@ -37,7 +47,7 @@ h1 {
 
 .parallax {
     /* The image used */
-    background-image: url("img_parallax.jpg");
+    /* background-image: url("img_parallax.jpg"); */
   
     /* Set a specific height */
     min-height: 500px;
@@ -158,63 +168,51 @@ header {
 /* -----------------------------------------------PÁGINA 3 - APRENDER------------------------------------------------------- */
 
 #aprender {
-    min-height: 85vh;
+    height: 100vh;
     color: black;
-    /* background-color:#0E1116; */
+    background-image: url(images/background/bgw2.png);
+
     background-color: whitesmoke;
-    text-align: center;
+    display: flex;
+    align-items: center;
 }
 
 .aprender-superior {
     margin-top: 30px;
 }
 
-.aprender-main {
-    display: flex;
-    align-items: center;
-    /* border: solid 2px white; */
-    height: 500px;
-}
-
 .aprender-left {
-    margin-top: 300px;
     width: 50%;
-}
-
-.aprender-left h1{
-    margin-top: 300px;
+    text-align: center;
 }
 
 .aprender-left img {
-    width: 100%;
+    width: 80%;
 }
 
 /* .aprender-left img:hover {
     width: 100%;
 } */
 
-.aprender-left div p {
-    font-size: 12px;
-}
-
 .aprender-right {
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    width: 50%;
 }
 
 .aprender-right h1 {
-    margin-top: 300px;
+    font-size: 20px;
 }
 
 .aprender-right ul li {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 10px 30px;
     list-style: none;
     font-size: large;
-    line-height: 35px;
+    line-height: 25px;
 }
 
 .aprender-right ul li:hover {
@@ -245,8 +243,9 @@ header {
 /* ------------------------------------------PÁGINA 5 - INSTRUTOR  ------------------------------------------------------------ */
 
 #instrutor {
-    min-height: 85vh;
-    background-color: whitesmoke;
+    height: 100vh;
+    background-image: url(images/background/bgw4.png);
+    background-repeat: round;
     color: black;
     display: flex;
     align-items: center;
@@ -255,8 +254,8 @@ header {
 }
 
 #instrutor p {
-    line-height: 40px;
-    font-size: large;
+    line-height: 25px;
+    font-size: 20px;
     margin: 20px;
 }
 
@@ -307,18 +306,13 @@ header {
 /* ----------------------------------------PÁGINA 6 - VANTAGENS -------------------------------------------------------------- */
 
 #vantagens-main {
-    min-height: 100vh;
+    height: 100vh;
     background-color: #0E1116;
     color: whitesmoke;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#vantagens-main p {
-    font-size: 16px;
-    line-height: 40px;
 }
 
 #vantagens-main p:hover {
@@ -328,38 +322,49 @@ header {
 }
 
 #vantagens-left {
-    width: 50%;
-    margin-top: 150px;
+    width: 80%;
 }
 
 #vantagens-right {
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+    width: 100%;
+    margin-left: 50px;
 }
 
 #vantagens-right h1{
     font-size: 50px;
+    line-height: 50px;
 }
-
+#vantagens-right ul{
+    line-height: 25px;
+    list-style: none;
+    margin: 0 70px;
+}
 #vantagens-left img {
     width: 100%;
 }
 
-.buttonBuy {
-    display: none;
-}
-
 .vantagens-lista-dividida {
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+.vantagens-lista-dividida ul {
+    margin: 0 20px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
 /* ----------------------------------------PÁGINA 7 - TRAKTOR CONTENT - IMAGEM ----------------------------------------------------- */
 
 #traktor-content {
-    background-color: whitesmoke;
+    background-image: url(images/background/bgw3.png);
+    background-position: bottom;
     color: #0E1116;
     height: 100vh;
     display: flex;
@@ -374,20 +379,22 @@ header {
     align-items: center;
     flex-direction: column;
     margin: 100px;
-    
 }
 
+#traktor-content h1 {
+    font-size: 20px;
+}
 
-/* #traktor-content img {
+#traktor-content img {
     width: 70%;
-} */
+}
 
 
 /* ----------------------------------------PÁGINA 7 - DUVIDAS - IMAGEM ----------------------------------------------------- */
 
 #faq-big {
-    min-height: 100vh;
-    background-color: whitesmoke;
+    height: 100vh;
+    background-image: url(images/background/bgw4.png);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -426,15 +433,24 @@ header {
     /* background-color: aqua; */
 }
 
+.collapse {
+    font-size: medium;
+}
+
 .faq-right {
     width: 60%;
-    /* background-color: blueviolet; */
+    margin: 20px;
 }
 
 .faq-right img{
     filter: sepia();
-    margin-left: 150px;
-    width: 700px;
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+
+.faq-right img:hover {
+    filter: none;
+    width: 100%;
     /* background-color: blueviolet; */
 }
 
@@ -509,7 +525,7 @@ footer {
     margin: 0px;
     text-align: center;
     padding-top: 20px;
-    min-height: 30vh;
+    min-height: 15vh;
 }
 
 footer a {
@@ -567,7 +583,8 @@ footer p {
     }
     /* ----------------------------------------------- */
     #aprender {
-        min-height: 100vh;
+        height: 100vh;
+        background-image: url("images/background/bgw1.png");
     }
     .aprender-superior {
         display: none;
@@ -600,16 +617,14 @@ footer p {
     /* ----------------------------------------------- */
     #instrutor-big {
         align-items: center;
-        min-height: 100vh;
+        height: 100vh;
     }
     #instrutor-big h1 {
         margin-top: 30px;
         font-size: 10vh;
     }
     /* ----------------------------------------------- */
-    #instrutor {
-        min-height: 100vh;
-    }
+
     #instrutor p {
         text-align: center;
         line-height: 30px;
@@ -633,7 +648,7 @@ footer p {
     }
     /* ----------------------------------------------- */
     #vantagens {
-        min-height: 100vh;
+        height: 100vh;
         text-align: center;
     }
     #vantagens h1 {
@@ -641,6 +656,7 @@ footer p {
         margin-top: 30px;
     }
     #vantagens-main {
+        background-image: url("images/background/bgw1.png");
         background-color: whitesmoke;
         color: black;
         display: flex;
@@ -662,7 +678,7 @@ footer p {
     #faq {
         background-color: whitesmoke;
         color: black;
-        min-height: 85vh;
+        height: 100vh;
         /* display: flex;
         align-items: center; */
     }
@@ -754,12 +770,5 @@ footer p {
         width: 33%;
         margin: 10px 10px;
     }
-
-    /* Collapse */
-
-    details, summary {
-          list-style: none;
-      }
-
 
 }
