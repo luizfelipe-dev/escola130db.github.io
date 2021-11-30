@@ -570,6 +570,8 @@ footer p {
         margin-left: auto;
         margin-right: auto;
     }
+
+    
     /* ----------------------------------------------- */
     #traktor {
         background-image: url(images/hero2-cel.jpg);
@@ -586,7 +588,9 @@ footer p {
         height: 100vh;
         display: flex;
         flex-direction: column;
-        background-image: url("images/background/bgw1.png");
+        background-image: none;
+        background-color: black;
+        color: whitesmoke;
     }
     
     #aprender h1 {
@@ -617,8 +621,10 @@ footer p {
     }
     * ----------------------------------------------- */
 
-    #traktor-content {
-        display: flex;
+    #traktor-content{
+        background-image: none;
+        background-color: black;
+        display: none;
         flex-direction: column;
     }
 
@@ -725,6 +731,12 @@ footer p {
         font-size: 16px;
     }
 
+    #vantagens {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     #vantagens-main {
         position: absolute;
         margin-top: 50px;
@@ -734,12 +746,10 @@ footer p {
     }
 
     #vantagens-right {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
+        margin-top: 30px;
     }
     #vantagens-left {
-        display: flex;
+        display: none;
         flex-direction: column;
         flex-wrap: wrap;
     }
@@ -747,6 +757,11 @@ footer p {
         width: 100%;
         display: flex;
         flex-direction: column;
+    } 
+
+    .vantagens-lista-dividida h1 {
+        font-size: 10px;
+        margin-bottom: 50px;
     }
 
     .vantagens-lista-dividida div {
@@ -757,9 +772,12 @@ footer p {
         display: none;
     }
 
-    .vantagens-lista-dividida ul {
-        width: 100%;
-        margin: 20px;
+    .vantagens-lista-dividida ul li{
+        width: 60%;
+        margin-right: auto;
+        line-height: 20px;
+        text-align: left;
+        display: flex;
     }
 
 
@@ -769,12 +787,14 @@ footer p {
 
     #faq-big {
         background-image: unset;
+        background-color: whitesmoke;
     }
 
     .faq-center {
-        margin-top: 1000px;
+        margin-top: 600px;
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;       
+        background-color: whitesmoke; 
     }
 
     
@@ -790,7 +810,7 @@ footer p {
     }
 
     .collapse {
-        width: 100%;
+        width: 70%;
     }
 }
 }
