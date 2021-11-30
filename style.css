@@ -584,36 +584,45 @@ footer p {
     /* ----------------------------------------------- */
     #aprender {
         height: 100vh;
+        display: flex;
+        flex-direction: column;
         background-image: url("images/background/bgw1.png");
     }
-    .aprender-superior {
-        display: none;
+    
+    #aprender h1 {
+        font-size: 20px;
+        text-align: center;
+        margin: 30px;
     }
+
+    #aprender h2 {
+        font-size: 12px;
+    }
+
     .aprender-main,
     .aprender-left,
     .aprender-right {
         width: 100%;
-    }
-    .aprender-left h1 {
-        text-align: center;
-        text-transform: uppercase;
-        margin: 30px 20px;
-        font-size: 4vh;
+        margin-top: 20px;
     }
     .aprender-left img {
         width: 70%;
     }
-    .aprender-main {
+
+    #aprender li {
+        width: 100%;
+        margin-top: 40px;
+        font-size: medium;
+        line-height: 30px;
+    }
+    * ----------------------------------------------- */
+
+    #traktor-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
-    #aprender ul li {
-        width: 100%;
-        margin: 8px;
-        font-size: medium;
-        line-height: 20px;
-    }
+
+
     /* ----------------------------------------------- */
     #instrutor-big {
         align-items: center;
@@ -625,115 +634,7 @@ footer p {
     }
     /* ----------------------------------------------- */
 
-    #instrutor p {
-        text-align: center;
-        line-height: 30px;
-        font-size: medium;
-        margin: 0px 30px;
-    }
-    #instrutor p:hover {
-        font-size: large;
-    }
-    .div-imagem-instrutor {
-        flex-direction: column;
-    }
-    .imagem-instrutor {
-        max-width: 50%;
-        border-radius: 40px;
-        margin: 5px;
-    }
-    .social {
-        margin-top: 40px;
-        margin-bottom: 40px;
-    }
-    /* ----------------------------------------------- */
-    #vantagens {
-        height: 100vh;
-        text-align: center;
-    }
-    #vantagens h1 {
-        font-size: 7vh;
-        margin-top: 30px;
-    }
-    #vantagens-main {
-        background-image: url("images/background/bgw1.png");
-        background-color: whitesmoke;
-        color: black;
-        display: flex;
-        flex-direction: column;
-    }
-    #vantagens-left,
-    #vantagens-mid,
-    #vantagens-right {
-        width: 100%;
-    }
-    #vantagens-main img {
-        display: none;
-    }
-    #vantagens-main p {
-        margin: 12px 30px;
-    }
-    /* ----------------------------------------------- */
-
-    #faq {
-        background-color: whitesmoke;
-        color: black;
-        height: 100vh;
-        /* display: flex;
-        align-items: center; */
-    }
-    
-    .faq-center {
-        color: black;
-        font-size: 16px;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-    
-    .faq-center p:hover {
-        background-color: sandybrown;
-        border-radius: 5px;
-    }
-    
-    .faq-center div {
-        min-width: 80%;
-        max-width: 90%;
-        margin: 20px 10px;
-    }
-    
-    .buttonBuy {
-        margin-top: 25px;
-        width: 200px;;
-        height: 40px;
-        justify-content: center;
-        border-radius: 8px;
-        display: block;
-    }
-
-    /* ----------------------------------------------- */
-    #newsletter {
-        margin: 10px 50px;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    .newsletter #botao-news {
-        margin: 30px 30px;
-    }
-    #newsletter h3 {
-        margin: 10px 30px;
-        font-size: 18px;
-    }
-    /* ----------------------------------------------- */
-    footer {
-        display: flex;
-        flex-direction: column;
-        margin: 5px 80px;
-    }
-}
+   
 
 /* ----------------------------------------- --------------------------------------- --------------------------------------*/
 
@@ -745,8 +646,23 @@ footer p {
 
 @media screen and (max-width: 720px) {
 
+    * {
+        margin: 0;
+    }
+
+
     header {
         display: none;
+    }
+
+    .hero {
+        background-image: unset;
+        color: black;
+        filter: grayscale();
+    }
+
+    #aprender {
+        margin-bottom: 200px;
     }
 
     #aprender ul li {
@@ -756,19 +672,132 @@ footer p {
         line-height: 10px;
     }
 
-    #vantagens-main p {
-        font-size: 12px;
-        line-height: 20px;
-    }
-
-    #faq-big h1 {
-        text-align: center;
-        font-size: 8vh;
-    }
-
+   
     .faq-center div {
         width: 33%;
         margin: 10px 10px;
     }
 
+    #traktor {
+        display: none;
+    }
+
+    #traktor-content {
+        background-image: unset;
+        background-color: whitesmoke;
+        height: 100vh;
+        color: black;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #traktor-content div {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    #traktor-content div h1{
+        margin-top: 20px;
+    }
+
+    #traktor-content div {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+    #instrutor {
+        background-image: unset;
+        background-color: whitesmoke;
+        text-align: center;
+    }
+
+    #instrutor div {
+        margin-top: 40px;
+    }
+    
+    #instrutor p {
+        font-size: 14px;
+    }
+
+    #instrutor i {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    #vantagens-main {
+        position: absolute;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #vantagens-right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .vantagens-lista-dividida {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vantagens-lista-dividida div {
+        margin: 0;
+    }
+
+    .vantagens-lista-dividida i{
+        display: none;
+    }
+
+    .vantagens-lista-dividida ul {
+        width: 100%;
+        margin: 20px;
+    }
+
+
+    #faq-big img {
+        display: none;
+    }
+
+
+
+
+
+
+    #faq-big {
+        background-image: unset;
+    }
+
+    .faq-center {
+        margin-top: 1000px;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    
+    .faq-left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;        
+    }
+
+
+    footer {
+        display: none;
+    }
+
+    .collapse {
+        width: 100%;
+    }
+}
 }
