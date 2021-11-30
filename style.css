@@ -656,33 +656,27 @@ footer p {
     }
 
     .hero {
-        background-image: unset;
+        /* background-image: unset; */
+        height: 100vh;
         color: black;
-        filter: grayscale();
-    }
-
-    #aprender {
-        margin-bottom: 200px;
+        filter: contrast()
     }
 
     #aprender ul li {
         width: 100%;
         margin: 8px;
         font-size: small;
-        line-height: 10px;
+        line-height: 20px;
     }
-
-   
-    .faq-center div {
-        width: 33%;
-        margin: 10px 10px;
-    }
-
-    #traktor {
+ 
+    iframe {
+        /* margin-top: 1000px; */
         display: none;
+        width: 100%;
     }
 
     #traktor-content {
+        margin: 0;
         background-image: unset;
         background-color: whitesmoke;
         height: 100vh;
@@ -696,21 +690,21 @@ footer p {
 
     #traktor-content div {
         width: 100%;
-        margin-top: 0;
+        height: auto;
     }
 
-    #traktor-content div h1{
-        margin-top: 20px;
+    #traktor-content div h1 {
+        font-size: 30px;
+        margin-top: 200px;
+        color: whitesmoke;
     }
 
-    #traktor-content div {
-        width: 100%;
-        margin-top: 0;
+    #traktor-content div p {
+        margin-top: -600px;
+        color: black;
     }
 
-    iframe {
-        width: 100%;
-    }
+
 
     #instrutor {
         background-image: unset;
@@ -744,7 +738,11 @@ footer p {
         flex-direction: column;
         flex-wrap: wrap;
     }
-
+    #vantagens-left {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
     .vantagens-lista-dividida {
         width: 100%;
         display: flex;
@@ -768,11 +766,6 @@ footer p {
     #faq-big img {
         display: none;
     }
-
-
-
-
-
 
     #faq-big {
         background-image: unset;
