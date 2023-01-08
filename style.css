@@ -429,6 +429,7 @@ header {
 
 .faq-left {
     width: 40%;
+    margin-top: 5%;
     margin-left: 50px;
     /* background-color: aqua; */
 }
@@ -438,7 +439,7 @@ header {
 }
 
 .faq-right {
-    width: 60%;
+    width: 50%;
     margin: 20px;
 }
 
